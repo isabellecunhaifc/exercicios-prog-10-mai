@@ -1,0 +1,9 @@
+<script>
+    const saque = Number(prompt('Informe a quantia que deseja sacar:'));
+    if(saque > 500){
+        alert('Saque não realizado - Você tem apenas 500 reais na conta');
+    }
+    else if(saque <= 500){
+        alert(`Saque realizado! - Sobraram R$ ${(500 - saque).toFixed(2).replace(",", ".")} em sua conta`);
+    }
+</script>
